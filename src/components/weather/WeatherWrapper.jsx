@@ -38,7 +38,7 @@ export default function WeatherWrapper() {
             placeholder="City"
             className={weatherStyles.searchInput}
           />
-          <button onClick={handleSearch} className={weatherStyles.searchButton}>
+          <button onClick={handleSearch} disabled={loading} className={weatherStyles.searchButton}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -65,9 +65,6 @@ export default function WeatherWrapper() {
             </React.Fragment>
           ))}
       </div>
-      {cityData.length > 0 && (
-        <div className={weatherStyles.bottomText}>This is the view in the browser</div>
-      )}
     </div>
   );
 }
