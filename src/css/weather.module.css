@@ -1,0 +1,114 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  color: #e67e22;
+  margin-bottom: 20px;
+  text-align: start;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.searchInput {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.weatherWrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.weatherCard {
+  border: 1px solid #000;
+  background-color: #f9f9f9;
+  width: 20%;
+}
+
+.tempDate {
+  background-color: #e67e22;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.tempHeading {
+  background-color: #c1d4e7;
+  color: #000;
+  padding: 5px;
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.TempItems {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid #000;
+}
+
+.divider {
+  width: 2px;
+  height: 20px;
+  background: #000;
+}
+
+.itemCell {
+  width: 10%;
+  text-align: center;
+}
+
+.bottomText {
+  text-align: center;
+  margin-top: 40px;
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .weatherWrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .inputDiv {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .weatherCard {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+}
